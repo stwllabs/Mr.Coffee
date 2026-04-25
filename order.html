@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MR.COFFEE order page</title>
+  <link rel="stylesheet" href="../Code/styles5.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+  <!--navbar-->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="../Asset/logo.png" alt="MR.COFFEE Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="../Code/index.html">Home</a></li>
+        <li><a href="../Code/rewards.html">Rewards</a></li>
+        <li><a href="../Code/aboutus.html">About Us</a></li>
+        <li><a href="../Code/menu.html">Menu</a></li>
+        <li><a href="../Code/" class="active">Order</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--order form-->
+  <div class="container">
+    <form id="multiStepForm">
+      <h2>Order Details</h2>
+
+      <div class="steps">
+        <span class="step active">1</span>
+        <span class="step">2</span>
+        <span class="step">3</span>
+        <span class="step">4</span>
+        <span class="step">5</span>
+        <span class="step">6</span>
+        <span class="step">7</span>
+      </div>
+
+      <div class="form-step active">
+        <label>Name</label>
+        <textarea id="name" placeholder="Enter your name..."></textarea>
+      </div>
+
+      <div class="form-step">
+        <label>Email</label>
+        <textarea id="email" placeholder="Enter your email..."></textarea>
+      </div>
+
+      <div class="form-step">
+        <label>Address</label>
+        <textarea id="address" placeholder="Enter your address..."></textarea>
+      </div>
+
+      <div class="form-step">
+        <label>Menus</label>
+        <select id="mainMenu">
+          <option value="">-- Select a menu --</option>
+          <option value="Espresso">Espresso (30k)</option>
+          <option value="Americano">Americano (25k)</option>
+          <option value="Cappucino">Cappucino (30k)</option>
+          <option value="Latte Macchiato">Latte Macchiato (30k)</option>
+          <option value="Caramel Macchiato">Caramel Macchiato (15k)</option>
+          <option value="Mocha Espresso">Mocha Espresso (28k)</option>
+
+
+          <option value="Mocha Frappe">Moccha Frappe (30k)</option>
+          <option value="Caramel Frappe">Caramel Frappe (25k)</option>
+          <option value="Vanilla Frappe">Vanilla Frappe (30k)</option>
+          <option value="Chocolate Frappe">Chocolate Frappe (30k)</option>
+          <option value="Coffee Jelly Frappe">Coffee Jelly Frappe (28k)</option>
+          <option value="Matcha Frappe">Matcha Frappe (28k)</option>
+
+
+          <option value="House Blend">House Blend (25k)</option>
+          <option value="Cold Brew">Cold Brew (25k)</option>
+          <option value="French Press">French Press (30k)</option>
+          <option value="Pour Over">Pour Over (30k)</option>
+          <option value="Nitro Brew">Nitro Brew (28k)</option>
+          <option value="Vanilla Cold Brew">Vanilla Cold Brew (28k)</option>
+
+
+          <option value="Croissant">Croissant (15k)</option>
+          <option value="Danish Pastry">Danish Pastry (15k)</option>
+          <option value="Banana Press">Banana Press (20k)</option>
+          <option value="Chocolate Muffin">Chocolate Muffin (20k)</option>
+          <option value="Cinnamon Roll">Cinnamon Roll (25k)</option>
+          <option value="Almond Biscotti">Almond Biscotti (20k)</option>
+
+        </select>
+      </div>
+
+      <div class="form-step">
+        <label class="section-title">Quantity</label>
+        <input type="number" id="quantity" min="1" value="1">
+      </div>
+
+      <div class="form-step">
+        <label class="section-title">Add-Ons</label>
+        <div class="addons-box">
+          <div class="column">
+            <label><input type="checkbox" name="addons" value="Vanilla syrup"> Vanilla syrup (+3k)</label>
+            <label><input type="checkbox" name="addons" value="Caramel syrup"> Caramel syrup (+3k)</label>
+            <label><input type="checkbox" name="addons" value="Oat milk"> Oat milk (+5k)</label>
+            <label><input type="checkbox" name="addons" value="Almond milk"> Almond milk (+5k)</label>
+          </div>
+          <div class="column">
+            <label><input type="checkbox" name="addons" value="Extra shot expresso"> Extra shot expresso (+5k)</label>
+            <label><input type="checkbox" name="addons" value="Brown sugar"> Brown sugar (+3k)</label>
+            <label><input type="checkbox" name="addons" value="Stevia sugar"> Stevia sugar (+5k)</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-step">
+        <label>Total Price</label>
+        <textarea id="price" readonly placeholder="Total will appear here..."></textarea>
+      </div>
+
+      <div class="navigation">
+        <button type="button" id="prevBtn">Back</button>
+        <button type="button" id="nextBtn">Next</button>
+      </div>
+    </form>
+  </div>
+
+
+  <!--footer-->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column logo-section">
+        <img src="../Asset/logo.png" alt="MR.COFFEE Logo" class="footer-logo">
+      </div>
+
+      <div class="footer-column contact-section">
+        <h3>Contact</h3>
+        <p><i class="fas fa-envelope"></i> info@mr.coffee.com</p>
+        <p><i class="fab fa-whatsapp"></i> +62 878 1408 0601</p>
+        <p><i class="fas fa-map-marker-alt"></i> Jln. Kemanggisan</p>
+      </div>
+
+      <div class="footer-column social-section">
+        <h3>Social Media</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i></a>
+          <a href="https://twitter.com/?lang=en-id"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
