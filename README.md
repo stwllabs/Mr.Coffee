@@ -1,1 +1,2 @@
+# Mr.Coffee
 Mr.Coffee is a digital platform that streamlines coffee ordering by blending brand storytelling with functional efficiency. I designed a five-page architecture featuring an automated ordering system with real-time price calculations and a strategic rewards integration. This project demonstrates my ability to transform complex user needs into a high-conversion, logic-driven interface that enhances both customer engagement and operational speed.
